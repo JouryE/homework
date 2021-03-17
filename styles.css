@@ -1,0 +1,143 @@
+body {
+    background-color: navajowhite;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    gap: 16px;
+}
+
+header  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+}
+
+article {
+    padding: 10px;
+    height: auto;
+    background-color: darkred;
+    color: white;
+}
+
+.C {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+}
+
+.E {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+}
+
+.D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+}
+
+#dynamisch {
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: darkred;
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: navajowhite;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 174px 100px auto 50px;
+        grid-template-areas:
+        "header C C"
+        "article C C"
+        "article E D"
+        "article E dynamisch"
+        "footer footer footer";
+        gap: 16px;
+    }
+
+    header  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        grid-area: header;
+        background-color: darkred;
+        color: white;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        grid-area: article;
+        background-color: darkred;
+        color: white;
+    }
+
+    .C {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 240px;
+        grid-area: C;
+        background-color: darkred;
+        color: white;
+    }
+
+    .E {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        grid-area: E;
+        background-color: darkred;
+        color: white;
+    }
+
+    .D {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        grid-area: D;
+        background-color: darkred;
+        color: white;
+    }
+
+    #dynamisch {
+        height: 50px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        grid-area: footer;
+        background-color: darkred;
+        color: white;
+    }
+}
